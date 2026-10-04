@@ -1,0 +1,375 @@
+<!-- title: Scheda Impianto Dentale -->
+<!-- description: Scheda informativa per il paziente sull'impianto dentale: fasi, rigenerazione ossea, alternative, durata, rischi e istruzioni post-operatorie. Studio Dentistico Colombo. -->
+<!-- apptitle: Impianto -->
+<!-- toc: cose=Cos'è; fasi=Le fasi; gbr=Rigenerazione ossea; alternative=Alternative; durata=Durata e rischi; dopo=Dopo l'intervento; domande=Domande -->
+<!-- sharedopo: Istruzioni post-operatorie -->
+<!-- stagefoot: Schema semplificato della mandibola vista di lato. -->
+<style>
+#scene[data-step="1"] .p-plan{animation:fadeIn .7s .4s both}
+#scene[data-step="1"] .p-plan .plan-line{animation:march 1.6s .4s linear both}
+#scene[data-step="2"] .p-tooth{animation:extract 1.3s cubic-bezier(.55,0,.75,.2) .5s both}
+#scene[data-step="2"] .p-socket{animation:fadeIn .5s 1.1s both}
+#scene[data-step="2"] .p-socket-fill{animation:fadeIn 1.8s 2.6s both}
+#scene[data-step="3"] .p-implant{animation:insert 1.5s cubic-bezier(.2,.8,.2,1) .3s both}
+#scene[data-step="3"] .p-turn{animation:fadeIn .5s 1.7s both}
+#scene[data-step="3"] .p-cover{animation:fadeIn .5s 1.9s both}
+#scene[data-step="3"] .p-sutures{animation:fadeIn .5s 2.3s both}
+#scene[data-step="4"] .p-halo{animation:fadeIn 2.6s .3s both}
+#scene[data-step="4"] .pl{animation:driftL 2.4s ease-in-out infinite}
+#scene[data-step="4"] .pr{animation:driftR 2.4s ease-in-out infinite}
+#scene[data-step="5"] .p-heal{animation:drop 1s cubic-bezier(.2,.8,.2,1) .3s both}
+#scene[data-step="5"] .p-scanner{animation:fadeIn .6s 1.3s both}
+#scene[data-step="5"] .scan-move{animation:scan 2.6s 1.7s ease-in-out infinite alternate}
+#scene[data-step="6"] .p-unit6{animation:seat 1.2s cubic-bezier(.2,.8,.2,1) .3s both}
+#scene[data-step="7"] .p-unit7{animation:seat 1.2s cubic-bezier(.2,.8,.2,1) .3s both}
+</style>
+<!--BODY-->
+<main>
+  <section class="wrap hero" id="cose">
+    <div class="hero-copy">
+      <p class="eyebrow">Scheda informativa · Implantologia</p>
+      <h1>L'impianto dentale</h1>
+      <p class="lead">Un impianto è una piccola vite in titanio che si inserisce nell'osso al posto della radice di un dente mancante. Quando si è saldata all'osso, sostiene un dente nuovo che si usa e si pulisce come un dente vero.</p>
+      <dl class="facts">
+        <div><dt>Anestesia</dt><dd>Locale</dd></div>
+        <div><dt>Intervento</dt><dd>Di solito meno di un'ora per impianto</dd></div>
+        <div><dt>Tempo totale</dt><dd>In genere da 4 a 10 mesi</dd></div>
+        <div><dt>Appuntamenti</dt><dd>Circa 6–8</dd></div>
+      </dl>
+      <p class="fine">Valori indicativi per un impianto singolo. Tempi e costi del suo caso glieli spieghiamo alla visita.</p>
+    </div>
+    <figure class="compare">
+      <div class="compare-stage">
+        <svg id="compare" viewBox="0 0 640 530" role="img" aria-label="Confronto tra un dente naturale, con corona, radice e legamento, e un impianto, con corona, moncone e vite in titanio nell'osso."></svg>
+      </div>
+      <figcaption>Nel dente naturale la radice è tenuta all'osso da un sottile legamento, che attutisce il morso. L'impianto si salda direttamente all'osso, senza legamento: è molto stabile, ma la gengiva intorno si difende meno dai batteri e va pulita con cura.</figcaption>
+    </figure>
+  </section>
+
+  {STEPPER}
+
+  <section id="gbr">
+    <div class="wrap">
+      <div class="sec-head"><div>
+        <p class="eyebrow">Quando serve più osso</p>
+        <h2>Rigenerazione ossea (GBR)</h2>
+        <p class="sec-intro">Dopo un'estrazione l'osso dell'alveolo tende a ridursi. Per conservarlo, o per ricostruirlo dove manca, l'alveolo si riempie di osso artificiale e si copre con una membrana. Di solito si fa nella stessa seduta dell'estrazione, in anestesia locale.</p>
+      </div></div>
+      <div class="gbr-panels">
+        <figure class="gbr-panel"><svg id="gbr-1" viewBox="170 170 380 330" role="img" aria-label="Alveolo vuoto, pieno di sangue, subito dopo l'estrazione"></svg><figcaption><span class="label">1 · Subito dopo l'estrazione</span><b>L'alveolo è vuoto</b><span class="fine">Senza aiuto, nei mesi successivi l'osso si riduce in larghezza e in altezza.</span></figcaption></figure>
+        <figure class="gbr-panel"><svg id="gbr-2" viewBox="170 170 380 330" role="img" aria-label="Alveolo riempito di granuli di osso artificiale e coperto da una membrana con punti di sutura"></svg><figcaption><span class="label">2 · Nella stessa seduta</span><b>Osso artificiale e membrana</b><span class="fine">I granuli riempiono l'alveolo; la membrana li protegge e i punti chiudono la gengiva.</span></figcaption></figure>
+        <figure class="gbr-panel"><svg id="gbr-3" viewBox="170 170 380 330" role="img" aria-label="Dopo la guarigione l'osso ha mantenuto il suo volume; tratteggiata, la posizione dell'impianto"></svg><figcaption><span class="label">3 · Dopo alcuni mesi</span><b>L'osso è pronto per l'impianto</b><span class="fine">I granuli fanno da impalcatura e vengono in parte sostituiti da osso nuovo.</span></figcaption></figure>
+      </div>
+      <div class="gbr-facts">
+        <div><h3>Cos'è l'osso artificiale</h3><p>È un sostituto osseo in granuli. Di solito è di origine animale (bovina o suina), purificato fino a lasciare solo la parte minerale; esistono anche materiali sintetici. Se per motivi personali o religiosi preferisce evitare un'origine animale, ce lo dica prima dell'intervento.</p></div>
+        <div><h3>La membrana</h3><p>È un sottile foglio di collagene che protegge i granuli mentre la gengiva guarisce. Si riassorbe da sola e non va tolta.</p></div>
+        <div><h3>Quanto si aspetta</h3><p>Di solito alcuni mesi prima di inserire l'impianto, in genere 4–6. Il dentista decide in base alla radiografia di controllo.</p></div>
+        <div><h3>Cosa dicono gli studi</h3><p>Rispetto a lasciare guarire l'alveolo da solo, si conservano in media circa 2 mm di larghezza e 1,7 mm di altezza dell'osso.<a class="ref" href="#f7">7</a> Il riassorbimento si riduce ma non si annulla del tutto.</p></div>
+      </div>
+      <div class="gbr-care">
+        <h3>Dopo una rigenerazione ossea</h3>
+        <ul class="do-list">
+          <li><span><b>Qualche granulo</b> può uscire dalla ferita nei primi giorni: se sono pochi è normale.</span></li>
+          <li><span><b>Non tocchi la zona</b> con la lingua o con le dita e non sciacqui con forza per alcuni giorni.</span></li>
+          <li><span><b>Ci chiami</b> se vede la membrana, se la ferita si apre o se esce molto materiale.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="alternative">
+    <div class="wrap">
+      <div class="sec-head"><div>
+        <p class="eyebrow">Le possibilità</p>
+        <h2>Le alternative all'impianto</h2>
+        <p class="sec-intro">Un dente mancante si può sostituire anche in altri modi. La scelta dipende dai denti vicini, dall'osso, dalla salute generale e dalle sue preferenze.</p>
+      </div></div>
+      <div class="alts">
+        <article class="alt">
+          <div class="alt-head"><svg class="alt-glyph" data-glyph="ponte" viewBox="0 0 96 64" aria-hidden="true"></svg><h3>Ponte</h3></div>
+          <dl>
+            <div><dt>Denti vicini</dt><dd>Vanno limati e coperti con corone per sostenere il ponte</dd></div>
+            <div><dt>Fisso o mobile</dt><dd>Fisso</dd></div>
+            <div><dt>Intervento chirurgico</dt><dd>No</dd></div>
+            <div><dt>Tempo per finire</dt><dd>Alcune settimane</dd></div>
+            <div><dt>Durata negli studi</dt><dd>Circa 90 ponti in zirconia su 100 ancora in uso dopo 5 anni<a class="ref" href="#f3">3</a></dd></div>
+            <div><dt>Pulizia</dt><dd>Filo con puntale rigido o scovolino da passare sotto il ponte</dd></div>
+          </dl>
+        </article>
+        <article class="alt">
+          <div class="alt-head"><svg class="alt-glyph" data-glyph="mobile" viewBox="0 0 96 64" aria-hidden="true"></svg><h3>Protesi mobile</h3></div>
+          <dl>
+            <div><dt>Denti vicini</dt><dd>Non si limano; la protesi si aggancia con piccoli ganci</dd></div>
+            <div><dt>Fisso o mobile</dt><dd>Si toglie per pulirla</dd></div>
+            <div><dt>Intervento chirurgico</dt><dd>No</dd></div>
+            <div><dt>Tempo per finire</dt><dd>Alcune settimane</dd></div>
+            <div><dt>Durata negli studi</dt><dd>Nessun dato confrontabile in questa scheda; nel tempo spesso va adattata</dd></div>
+            <div><dt>Pulizia</dt><dd>Fuori dalla bocca, oltre ai denti rimasti</dd></div>
+          </dl>
+        </article>
+      </div>
+      <div class="alt-none">
+        <h3>Se non si sostituisce il dente</h3>
+        <p>Nei mesi dopo un'estrazione l'osso della zona si riduce, soprattutto in larghezza: in uno studio si è dimezzato in un anno, per due terzi già nei primi tre mesi.<a class="ref" href="#f6">6</a> Nel tempo i denti vicini e quello dell'arcata opposta possono spostarsi o inclinarsi.</p>
+      </div>
+      <p class="fine evidence-note">I numeri sulla durata vengono da revisioni sistematiche diverse, non da un confronto diretto tra i trattamenti. Indicano un ordine di grandezza e non sono una garanzia per il singolo caso.</p>
+    </div>
+  </section>
+
+  <section id="durata">
+    <div class="wrap">
+      <div class="sec-head"><div>
+        <p class="eyebrow">Cosa dicono gli studi</p>
+        <h2>Quanto dura e cosa può andare storto</h2>
+        <p class="sec-intro">Ogni pallino è un paziente o un impianto su cento, secondo le revisioni della letteratura scientifica.</p>
+      </div></div>
+      <div class="risk-grid">
+        <div class="array-card">
+          <p class="big">95 <small>su 100</small></p>
+          <p>Gli impianti ancora al loro posto dopo 10 anni.<a class="ref" href="#f1">1</a></p>
+          <div class="icon-array" id="arr-surv" role="img" aria-label="95 pallini pieni su 100: impianti ancora in bocca dopo 10 anni"></div>
+          <ul class="legend"><li><i class="on"></i>Ancora in bocca</li><li><i></i>Persi</li></ul>
+          <p class="fine">Le corone in zirconia sugli impianti sono ancora in uso dopo 5 anni in circa 98 casi su 100.<a class="ref" href="#f2">2</a></p>
+        </div>
+        <div class="array-card">
+          <p class="big">1 <small>paziente su 5</small></p>
+          <p>Ha una perimplantite, cioè un'infiammazione della gengiva e dell'osso intorno all'impianto.<a class="ref" href="#f4">4</a></p>
+          <div class="icon-array" id="arr-peri" role="img" aria-label="22 pallini evidenziati su 100: pazienti con perimplantite"></div>
+          <ul class="legend"><li><i class="warn"></i>Con perimplantite</li><li><i></i>Senza</li></ul>
+          <p class="fine">La stima media è del 22%, ma tra gli studi va dall'1% al 47% perché usano definizioni diverse. Il rischio è più alto in chi ha avuto la parodontite, ha un'igiene insufficiente o salta i controlli.<a class="ref" href="#f5">5</a></p>
+        </div>
+      </div>
+      <div class="risks">
+        <h3>Altri rischi, più rari</h3>
+        <ul>
+          <li>Gonfiore, un piccolo livido e fastidio per qualche giorno sono normali.</li>
+          <li>Infezione della zona operata.</li>
+          <li>Mancata integrazione: l'impianto non si salda all'osso. Di solito si rimuove e, dopo la guarigione, se ne può inserire un altro.</li>
+          <li>Arcata inferiore: alterazione della sensibilità di labbro o mento se l'impianto si avvicina al nervo. La TAC 3D serve anche a evitarlo.</li>
+          <li>Arcata superiore: coinvolgimento del seno mascellare.</li>
+          <li>Problemi della corona in zirconia: in 5 anni si frattura in circa 2 casi su 100 e la vite si allenta in circa 1 caso su 100.<a class="ref" href="#f2">2</a></li>
+        </ul>
+        <p class="fine">Il consenso informato le spiega nel dettaglio rischi e alternative per il suo caso.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="dopo">
+    <div class="wrap">
+      <div class="sec-head"><div>
+        <p class="eyebrow">Istruzioni post-operatorie</p>
+        <h2>Dopo l'intervento</h2>
+        <p class="sec-intro">Sono le indicazioni standard dello studio. Se il dentista le ha dato istruzioni diverse, segua quelle.</p>
+      </div></div>
+      <div class="tabs" role="tablist" aria-label="Istruzioni per periodo">
+        <button class="tab" role="tab" id="tab-oggi" aria-controls="p-oggi" aria-selected="true" type="button">Il primo giorno</button>
+        <button class="tab" role="tab" id="tab-sett" aria-controls="p-sett" aria-selected="false" tabindex="-1" type="button">La prima settimana</button>
+        <button class="tab" role="tab" id="tab-tempo" aria-controls="p-tempo" aria-selected="false" tabindex="-1" type="button">Nel tempo</button>
+        <button class="tab tab-alert" role="tab" id="tab-call" aria-controls="p-call" aria-selected="false" tabindex="-1" type="button">Quando chiamarci</button>
+      </div>
+      <div class="panel" role="tabpanel" id="p-oggi" aria-labelledby="tab-oggi">
+        <ul class="do-list">
+          <li><span><b>Morda la garza</b> per 30 minuti senza toglierla.</span></li>
+          <li><span><b>Impacchi freddi</b> sulla guancia nelle prime ore, avvolti in un panno: 10 minuti sì e 10 no.</span></li>
+          <li><span><b>Non sciacqui e non sputi</b> con forza, e non usi cannucce.</span></li>
+          <li><span><b>Cibi morbidi</b>, tiepidi o freddi. Mastichi dal lato opposto.</span></li>
+          <li><span><b>Non fumi e non beva alcolici.</b> Il fumo rallenta la guarigione.</span></li>
+          <li><span><b>Farmaci</b>: prenda quelli prescritti agli orari indicati, senza saltare dosi.</span></li>
+          <li><span><b>Riposo</b>: niente sport o sforzi intensi per 2–3 giorni. Di notte tenga la testa un po' sollevata.</span></li>
+        </ul>
+      </div>
+      <div class="panel" role="tabpanel" id="p-sett" aria-labelledby="tab-sett" hidden>
+        <ul class="do-list">
+          <li><span><b>Dal giorno dopo</b> lavi normalmente gli altri denti. Sulla zona operata usi uno spazzolino morbido, con delicatezza e senza toccare i punti.</span></li>
+          <li><span><b>Collutorio</b> alla clorexidina solo se prescritto, come indicato.</span></li>
+          <li><span><b>Il gonfiore</b> è massimo al secondo o terzo giorno, poi cala. Un piccolo livido sulla guancia è normale.</span></li>
+          <li><span><b>Cibi morbidi</b> per qualche giorno, poi torni gradualmente alla dieta normale.</span></li>
+          <li><span><b>I punti</b> si tolgono di solito dopo 7–14 giorni, all'appuntamento di controllo.</span></li>
+          <li><span><b>Il provvisorio mobile</b>, se ne ha uno, lo porti solo come le abbiamo indicato.</span></li>
+        </ul>
+      </div>
+      <div class="panel" role="tabpanel" id="p-tempo" aria-labelledby="tab-tempo" hidden>
+        <ul class="do-list">
+          <li><span><b>Con la corona provvisoria</b> eviti cibi molto duri da quel lato: è più fragile della definitiva.</span></li>
+          <li><span><b>Pulizia quotidiana</b> come per un dente: spazzolino, più scovolino o filo secondo le indicazioni dell'igienista.</span></li>
+          <li><span><b>Controlli e igiene professionale</b> con la frequenza decisa per il suo caso, spesso ogni 3–6 mesi.</span></li>
+          <li><span><b>Gengiva che sanguina o si gonfia</b> intorno all'impianto non è normale: ce lo segnali.</span></li>
+          <li><span><b>Se digrigna i denti</b> di notte, un bite può proteggere la corona.</span></li>
+        </ul>
+      </div>
+      <div class="panel" role="tabpanel" id="p-call" aria-labelledby="tab-call" hidden>
+        <div class="alert-box">
+          <ul class="do-list">
+            <li><span>Sanguinamento che non si ferma dopo 30 minuti di pressione con una garza.</span></li>
+            <li><span>Febbre oltre 38 °C.</span></li>
+            <li><span>Dolore o gonfiore che aumentano dopo il terzo giorno invece di calare.</span></li>
+            <li><span>Labbro, mento o lingua ancora addormentati il giorno dopo l'intervento.</span></li>
+            <li><span>La vite di guarigione, il provvisorio o la corona si muovono o si staccano.</span></li>
+          </ul>
+          {CALL}
+        </div>
+      </div>
+      {STRIP}
+    </div>
+  </section>
+
+  <section id="domande">
+    <div class="wrap">
+      <div class="sec-head"><div>
+        <p class="eyebrow">Domande frequenti</p>
+        <h2>Le domande che ci fanno più spesso</h2>
+      </div></div>
+      <div class="faq">
+        <details><summary>Fa male?</summary><p>L'intervento si fa in anestesia locale: si sente pressione e vibrazione, non dolore. Nei giorni successivi il fastidio è di solito moderato e si controlla con gli antidolorifici prescritti. Nello studio lavoriamo solo in anestesia locale, senza sedazione.</p></details>
+        <details><summary>Si può mettere l'impianto subito dopo l'estrazione?</summary><p>In casi selezionati sì: è l'impianto post-estrattivo, che ha una scheda dedicata. Servono pareti d'osso integre e abbastanza osso oltre la radice per fissare l'impianto.</p></details>
+        <details><summary>Resterò senza dente durante il trattamento?</summary><p>Nella zona che si vede quando sorride si può quasi sempre mettere un dente provvisorio mobile fino alla corona provvisoria sull'impianto.</p></details>
+        <details><summary>Devo sospendere i miei farmaci?</summary><p>Non sospenda nessun farmaco da solo. Ci dica sempre quali medicine prende, in particolare anticoagulanti, antiaggreganti e farmaci per le ossa come bifosfonati o denosumab: alcuni richiedono precauzioni prima dell'intervento.</p></details>
+        <details><summary>Sono troppo anziano per un impianto?</summary><p>L'età da sola non è un limite. Contano la salute generale, la quantità di osso e la possibilità di pulire bene l'impianto. Nei ragazzi invece si aspetta che la crescita delle ossa sia finita.</p></details>
+        <details><summary>Il corpo può rigettare l'impianto?</summary><p>Non si tratta di un rigetto come nei trapianti: il titanio è ben tollerato. Può capitare che l'osso non si saldi all'impianto, soprattutto nei primi mesi. In quel caso di solito si rimuove e, dopo la guarigione, se ne può inserire un altro.</p></details>
+        <details><summary>Posso fare la risonanza magnetica?</summary><p>In genere sì, perché il titanio non è magnetico. Avvisi comunque il radiologo che ha degli impianti: nella zona della bocca le immagini possono risultare meno nitide.</p></details>
+        <details><summary>Quanto costa?</summary><p>Dipende dal numero di impianti e da eventuali innesti di osso. Riceve un preventivo scritto prima di iniziare.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <div><p class="label">Fonti</p></div>
+  <ol>
+    <li id="f1">Jung RE, Zembic A, Pjetursson BE, Zwahlen M, Thoma DS. Systematic review of the survival rate and the incidence of biological, technical, and aesthetic complications of single crowns on implants reported in longitudinal studies with a mean follow-up of 5 years. <i>Clin Oral Implants Res</i> 2012;23 Suppl 6:2–21. <a href="https://doi.org/10.1111/j.1600-0501.2012.02547.x" target="_blank" rel="noopener">Articolo</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Jung+Zembic+Pjetursson+Zwahlen+Thoma+2012+single+crowns+on+implants" target="_blank" rel="noopener">PubMed</a></li>
+    <li id="f2">Pjetursson BE, Valente NA, Strasding M, Zwahlen M, Liu S, Sailer I. A systematic review of the survival and complication rates of zirconia-ceramic and metal-ceramic single crowns. <i>Clin Oral Implants Res</i> 2018;29 Suppl 16:199–214. <a href="https://doi.org/10.1111/clr.13306" target="_blank" rel="noopener">Articolo</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/30328190/" target="_blank" rel="noopener">PubMed</a></li>
+    <li id="f3">Pjetursson BE, Sailer I, Makarov NA, Zwahlen M, Thoma DS. All-ceramic or metal-ceramic tooth-supported fixed dental prostheses (FDPs)? A systematic review of the survival and complication rates. Part II: Multiple-unit FDPs. <i>Dent Mater</i> 2015;31(6):624–639. <a href="https://doi.org/10.1016/j.dental.2015.02.013" target="_blank" rel="noopener">Articolo</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Pjetursson+Sailer+Makarov+Zwahlen+Thoma+2015+multiple-unit+FDPs" target="_blank" rel="noopener">PubMed</a></li>
+    <li id="f4">Derks J, Tomasi C. Peri-implant health and disease. A systematic review of current epidemiology. <i>J Clin Periodontol</i> 2015;42 Suppl 16:S158–S171. <a href="https://doi.org/10.1111/jcpe.12334" target="_blank" rel="noopener">Articolo</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/25495683/" target="_blank" rel="noopener">PubMed</a></li>
+    <li id="f5">Schwarz F, Derks J, Monje A, Wang HL. Peri-implantitis. <i>J Clin Periodontol</i> 2018;45 Suppl 20:S246–S266. <a href="https://doi.org/10.1111/jcpe.12954" target="_blank" rel="noopener">Articolo</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/29926957/" target="_blank" rel="noopener">PubMed</a></li>
+    <li id="f6">Schropp L, Wenzel A, Kostopoulos L, Karring T. Bone healing and soft tissue contour changes following single-tooth extraction: a clinical and radiographic 12-month prospective study. <i>Int J Periodontics Restorative Dent</i> 2003;23(4):313–323. <a href="https://pubmed.ncbi.nlm.nih.gov/12956475/" target="_blank" rel="noopener">PubMed</a></li>
+    <li id="f7">Avila-Ortiz G, Chambrone L, Vignoletti F. Effect of alveolar ridge preservation interventions following tooth extraction: a systematic review and meta-analysis. <i>J Clin Periodontol</i> 2019;46 Suppl 21:195–223. <a href="https://doi.org/10.1111/jcpe.13057" target="_blank" rel="noopener">Articolo</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/30623987/" target="_blank" rel="noopener">PubMed</a></li>
+  </ol>
+  <p class="fine">Questa scheda spiega il trattamento in generale e non sostituisce la visita né il consenso informato, in cui il dentista le illustra rischi, alternative e costi del suo caso. Le illustrazioni sono schemi semplificati. Aggiornata a ottobre 2026.</p>
+</footer>
+<!--/BODY-->
+<script>
+(function(){
+var p="sc-", C=360;
+var STEPS=[
+  {short:"Visita", title:"Visita e progetto", chips:["1–2 appuntamenti","Radiografia e TAC 3D"],
+   text:"Il dentista controlla denti, gengive e salute generale. Con una TAC 3D (Cone Beam) misura in millimetri l'osso disponibile e la distanza dal nervo, poi sceglie posizione, lunghezza e diametro dell'impianto.",
+   note:"Prima dell'impianto la bocca deve essere sana: carie e malattie delle gengive si curano prima. Ci dica sempre se fuma e quali farmaci prende.",
+   alt:"Dente danneggiato tra due denti sani. Tratteggiata nell'osso, la posizione progettata dell'impianto e la distanza misurata dal nervo."},
+  {short:"Estrazione", title:"Estrazione e guarigione", chips:["Solo se il dente c'è ancora","Anestesia locale"],
+   text:"Il dente non recuperabile viene estratto. Lo spazio lasciato dalla radice si riempie prima di sangue e poi, nelle settimane successive, di nuovo osso.",
+   note:"Per conservare l'osso, l'alveolo si può riempire subito con osso artificiale: lo trova spiegato nella sezione «Rigenerazione ossea». In casi selezionati l'impianto si inserisce nella stessa seduta (impianto post-estrattivo).",
+   alt:"Il dente viene estratto. Lo spazio della radice si riempie di sangue e poi di nuovo osso."},
+  {short:"Inserimento", title:"Inserimento dell'impianto", chips:["Anestesia locale","Di solito meno di un'ora"],
+   text:"Nell'osso si prepara un piccolo foro su misura e vi si avvita l'impianto, una vite in titanio lunga circa un centimetro. Sopra si avvita la vite tappo, che lo chiude, e la gengiva si richiude con alcuni punti.",
+   note:"Durante l'intervento si sente pressione e vibrazione, non dolore. I punti si tolgono di solito dopo 7–14 giorni.",
+   alt:"L'impianto in titanio viene avvitato nell'osso e chiuso con la vite tappo sotto la gengiva, poi si danno i punti."},
+  {short:"Integrazione", title:"Osteointegrazione", chips:["In genere 2–6 mesi","Solo controlli"],
+   text:"L'osso cresce a stretto contatto con la superficie dell'impianto fino a bloccarlo stabilmente. Questo processo si chiama osteointegrazione e richiede tempo, di solito di più nell'arcata superiore.",
+   note:"L'impianto resta coperto dalla gengiva. Se il dente mancante si vede quando sorride, nel frattempo si può portare un provvisorio mobile.",
+   alt:"L'osso cresce intorno all'impianto, che resta chiuso dalla vite tappo sotto la gengiva."},
+  {short:"Scopertura", title:"Vite di guarigione e prima impronta", chips:["Anestesia locale","Breve seduta"],
+   text:"Con una piccola incisione si scopre l'impianto, si toglie la vite tappo e si avvita la vite di guarigione, che sporge dalla gengiva e la aiuta a guarire con la forma giusta. Si prende anche la prima impronta, che serve a preparare la corona provvisoria.",
+   note:"Per l'impronta si avvita per pochi minuti un piccolo pezzo di riferimento al posto della vite di guarigione. Per qualche giorno la gengiva può essere un po' dolente.",
+   alt:"La vite di guarigione sporge dalla gengiva; uno scanner prende la prima impronta."},
+  {short:"Provvisorio", title:"Moncone e corona provvisoria", chips:["Seconda impronta"],
+   text:"Si avvita sull'impianto il moncone insieme alla corona provvisoria in resina. Il provvisorio guida la gengiva intorno al nuovo dente; quando la forma è stabile si prende la seconda impronta, da cui il laboratorio costruisce la corona definitiva.",
+   note:"Il provvisorio è più fragile della corona definitiva: eviti cibi molto duri da quel lato.",
+   alt:"Il moncone avvitato all'impianto porta la corona provvisoria color resina."},
+  {short:"Corona", title:"Corona definitiva in zirconia", chips:["Dopo 2–4 settimane di laboratorio"],
+   text:"La corona definitiva in zirconia si fissa al moncone con una vite o con un cemento. Si controllano colore, contatti e morso finché è comoda.",
+   note:"Da qui in poi l'impianto va pulito ogni giorno e controllato nel tempo, come un dente naturale.",
+   alt:"La corona definitiva in zirconia è fissata sul moncone, allineata ai denti vicini."}
+];
+var TAGS=[
+  {cls:"stag s1", d:.3, x:24, y:42, text:"Dente da sostituire", to:[[388,134]]},
+  {cls:"stag s1", d:.9, x:696, y:376, anchor:"end", text:"Impianto progettato", to:[[398,376]]},
+  {cls:"stag s1", d:1.3, x:24, y:396, text:"Distanza dal nervo", sub:"misurata sulla TAC 3D", to:[[292,396]]},
+  {cls:"stag s1", d:1.6, x:696, y:452, anchor:"end", text:"Nervo", to:[[642,494]]},
+  {cls:"stag s2", d:.3, x:696, y:42, anchor:"end", text:"Il dente viene estratto", to:[]},
+  {cls:"stag s2", d:1.3, x:24, y:330, text:"Alveolo", sub:"lo spazio della radice", to:[[316,330]]},
+  {cls:"stag s2", d:2.9, x:696, y:420, anchor:"end", text:"Nuovo osso", sub:"in alcune settimane", to:[[394,410]]},
+  {cls:"stag s3", d:1.7, x:24, y:380, text:"Impianto in titanio", sub:"es. Ø 4 mm × 10 mm", to:[[322,380]]},
+  {cls:"stag s3", d:1.8, x:696, y:150, anchor:"end", text:"Si avvita nell'osso", to:[[412,198]]},
+  {cls:"stag s3", d:2.1, x:24, y:44, text:"Vite tappo", sub:"chiude l'impianto sotto la gengiva", to:[[330,262]]},
+  {cls:"stag s4", d:.3, x:360, y:44, anchor:"middle", text:"In genere 2–6 mesi", to:[]},
+  {cls:"stag s4", d:1.2, x:24, y:400, text:"L'osso si salda", sub:"all'impianto", to:[[310,392]]},
+  {cls:"stag s5", d:.9, x:24, y:206, text:"Vite di guarigione", sub:"modella la gengiva", to:[[330,236]]},
+  {cls:"stag s5", d:1.4, x:24, y:96, text:"Prima impronta", to:[[318,46]]},
+  {cls:"stag s6", d:1.2, x:24, y:44, text:"Corona provvisoria", sub:"in resina, avvitata al moncone", to:[[316,150]]},
+  {cls:"stag s6", d:1.5, x:696, y:262, anchor:"end", text:"Moncone", to:[[398,260]]},
+  {cls:"stag s6", d:2.2, x:696, y:44, anchor:"end", text:"Poi la seconda impronta", to:[]},
+  {cls:"stag s7", d:1.1, x:24, y:44, text:"Corona in zirconia", to:[[316,150]]},
+  {cls:"stag s7", d:1.4, x:696, y:262, anchor:"end", text:"Moncone", to:[[398,260]]},
+  {cls:"stag s7", d:1.6, x:24, y:380, text:"Impianto", to:[[324,380]]}
+];
+function scene(){
+  var o=[];
+  o.push(T.stageBg(), T.bone(p), T.nerve());
+  o.push('<g class="part p-halo v4 v5 v6 v7"><path d="'+T.halo(C)+'" class="f-dense" opacity=".85"/></g>');
+  o.push('<g class="part p-particles v4">'+T.particles(C)+'</g>');
+  o.push('<g class="part p-socket v2"><path d="'+T.socket(C)+'" class="f-clot"/></g>');
+  o.push('<g class="part p-socket-fill v2"><path d="'+T.socket(C)+'" class="f-bone"/><path d="'+T.socket(C)+'" fill="url(#'+p+'pores)"/></g>');
+  o.push('<g>'+T.tooth(178)+T.tooth(542)+'</g>');
+  o.push('<g class="part p-tooth v1 v2">'+T.damagedTooth(C)+'</g>');
+  o.push('<g class="part p-implant v3 v4 v5 v6 v7">'+T.implantG(p,C)+'</g>');
+  o.push(T.gum());
+  o.push('<g class="part p-cover v3 v4">'+T.coverScrew(C,272,true)+'</g>');
+  o.push('<g class="part p-sutures v3">'+T.sutures(C)+'</g>');
+  o.push('<g class="part p-heal v5">'+T.healG(p,C)+'</g>');
+  o.push('<g class="part p-unit6 v6">'+T.abutG(p,C)+T.crownG(C,"f-temp")+'</g>');
+  o.push('<g class="part p-unit7 v7">'+T.abutG(p,C)+T.crownG(C)+'</g>');
+  o.push('<g class="part p-plan v1"><path d="'+T.implant(C)+'" class="plan-line"/><line x1="292" y1="290" x2="292" y2="476" class="measure" marker-start="url(#'+p+'arr)" marker-end="url(#'+p+'arr)"/><line x1="280" y1="288" x2="304" y2="288" class="measure"/><line x1="280" y1="480" x2="304" y2="480" class="measure"/></g>');
+  o.push('<g class="part p-turn v3"><path d="M310 196 A50 14 0 0 0 410 196" class="turn" marker-end="url(#'+p+'arr)"/><path d="M310 196 A50 14 0 0 1 410 196" class="turn" stroke-dasharray="4 7" opacity=".5"/></g>');
+  o.push('<g class="part p-scanner v5"><g class="scan-move">'+T.scanner(C-43,220,40)+'</g></g>');
+  o.push(T.scaleBar(), T.tags(TAGS));
+  return T.defs(p)+o.join("");
+}
+var CMP_TAGS=[
+  {x:320, y:150, anchor:"middle", text:"Corona", to:[[196,150],[444,150]]},
+  {x:320, y:246, anchor:"middle", text:"Gengiva", to:[[206,258],[434,258]]},
+  {x:320, y:294, anchor:"middle", text:"Moncone", to:[[496,258]]},
+  {x:320, y:342, anchor:"middle", text:"Radice", to:[[162,340]]},
+  {x:320, y:392, anchor:"middle", text:"Impianto", to:[[494,392]]},
+  {x:320, y:440, anchor:"middle", text:"Legamento", to:[[143,432]]},
+  {x:320, y:490, anchor:"middle", text:"Osso", to:[[200,494],[440,494]]}
+];
+function block(x0,cx){
+  var x1=x0+220;
+  return {
+    gum:"M"+x0+" 214 C"+(x0+40)+" 214 "+(cx-50)+" 240 "+cx+" 240 C"+(cx+50)+" 240 "+(x1-40)+" 214 "+x1+" 214 L"+x1+" 284 L"+x0+" 284 Z",
+    top:"M"+x0+" 214 C"+(x0+40)+" 214 "+(cx-50)+" 240 "+cx+" 240 C"+(cx+50)+" 240 "+(x1-40)+" 214 "+x1+" 214",
+    bone:"M"+x0+" 272 L"+x1+" 272 L"+x1+" 502 Q"+x1+" 520 "+(x1-18)+" 520 L"+(x0+18)+" 520 Q"+x0+" 520 "+x0+" 502 Z"
+  };
+}
+function compare(){
+  var q="cp-", L=block(0,110), R=block(420,530), o=[];
+  o.push('<clipPath id="'+q+'clipL"><rect x="0" y="282" width="220" height="240"/></clipPath>');
+  o.push('<text x="110" y="42" text-anchor="middle" class="ttl">Dente naturale</text><text x="530" y="42" text-anchor="middle" class="ttl">Con impianto</text>');
+  [L,R].forEach(function(b){ o.push('<path d="'+b.bone+'" class="f-bone"/><path d="'+b.bone+'" fill="url(#'+q+'pores)"/>'); });
+  o.push('<path d="'+T.rootLine(110)+'" class="lig" clip-path="url(#'+q+'clipL)"/>', T.tooth(110));
+  o.push('<path d="'+T.halo(530)+'" class="f-dense" opacity=".7"/>', T.implantG(q,530));
+  [L,R].forEach(function(b){ o.push('<path d="'+b.gum+'" class="f-gum"/><path d="'+b.top+'" class="gum-edge"/>'); });
+  o.push(T.abutG(q,530), T.crownG(530), T.tags(CMP_TAGS));
+  return T.defs(q)+o.join("");
+}
+function gbr(n){
+  var q="g"+n+"-", o=[T.stageBg(), T.bone(q)];
+  if(n===1) o.push('<path d="'+T.socket(C)+'" class="f-clot"/>');
+  if(n===2) o.push('<path d="'+T.socket(C)+'" fill="url(#'+q+'graft)"/>');
+  if(n===3) o.push('<path d="'+T.socket(C)+'" fill="url(#'+q+'graft2)" opacity=".7"/>');
+  o.push(T.tooth(178), T.tooth(542), T.gum());
+  if(n===1) o.push('<path d="'+T.gumOpening(C)+'" class="f-clot"/>');
+  if(n===2) o.push('<path d="'+T.gumOpening(C)+'" fill="url(#'+q+'graft)"/>', T.membraneG(C), T.sutures(C));
+  if(n===3) o.push('<path d="'+T.implant(C)+'" class="plan-line"/>');
+  return T.defs(q)+o.join("");
+}
+T.init({
+  publicUrl:"https://robbcolo.github.io/trattamenti/impianto.html",
+  shareText:"Studio Dentistico Colombo – ecco la scheda sul suo trattamento con impianto:",
+  steps:STEPS,
+  scene:{build:scene, tags:TAGS},
+  figures:[{id:"compare", build:compare, tags:CMP_TAGS},{id:"gbr-1", build:function(){return gbr(1);}},{id:"gbr-2", build:function(){return gbr(2);}},{id:"gbr-3", build:function(){return gbr(3);}}],
+  arrays:[["arr-surv",95,"on"],["arr-peri",22,"warn"]]
+});
+})();
+</script>
